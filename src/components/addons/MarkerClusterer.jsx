@@ -317,6 +317,8 @@ const updaterMap = {
 
   imagePath(instance, imagePath) {
     instance.setImagePath(imagePath)
+    instance.styles_ = []
+    instance.setupStyles_()
   },
 
   imageSizes(instance, imageSizes) {
